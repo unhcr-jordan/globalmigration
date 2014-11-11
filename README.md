@@ -1,7 +1,6 @@
-# Global Migration Data Sheet 2013
-Unique estimates of migration flows between the top 50 sending and receiving countries.
+# Visualisation of refugees internal displacement flows in Jordan 
 
-http://www.global-migration.info/
+
 
 ## Installation
 ```javascript
