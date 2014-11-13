@@ -28,8 +28,14 @@ module.exports = function(grunt) {
     var headers = [];
     
     // sort order
-    var sortedRegions = ['North America', 'Africa', 'Europe', 'Fmr Soviet Union', 'West Asia', 'South Asia', 'East Asia', 'South-East Asia', 'Oceania', 'Latin America'];
-
+    //'Ajlun', 'Amman', 'Aqaba', 'Balqa', 'Irbid', 'Jarash', 'Karak', 'Maan', 'Madaba', 'Mafraq', 'Tafileh', 'Zarqa', '
+    
+    //var sortedRegions = ['North America', 'Africa', 'Europe', 'Fmr Soviet Union', 'West Asia', 'South Asia', 'East Asia', 'South-East Asia', 'Oceania', 'Latin America'];
+    
+   // var sortedRegions = ['Ajlun', 'Amman', 'Aqaba', 'Balqa', 'Irbid', 'Jarash', 'Karak', 'Maan', 'Madaba', 'Mafraq', 'Tafileh', 'Zarqa'];
+ 
+     var sortedRegions = ['North', 'Center', 'South'];
+ 
     // create object from headers out of row
     // TODO: get years from CSV
     function obj(row) {

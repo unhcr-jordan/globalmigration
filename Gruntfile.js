@@ -19,15 +19,15 @@ module.exports = function(grunt) {
     filter: {
       main: {
         options: {
-          countries: 'data/countries Version2.csv'
+          countries: 'data/show.csv'
         },
-        src: 'data/Flow Data for Online Viz Version2.csv',
-        dest: 'tmp/data.csv'
+        src: 'data/Movement_Test_Data_v11Nov2014.csv',
+        dest: 'data/data.csv'
       }
     },
     compile: {
       main: {
-        src: 'tmp/data.csv',
+        src: 'data/data.csv',
         dest: 'json/migrations.json'
       }
     },
