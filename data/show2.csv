@@ -1,0 +1,14 @@
+region,regionid,iso,name,show (1 = yes; 0 = no)
+North,1,1,Ajlun,1
+Center,2,2,Amman,1
+South,3,3,Aqaba,1
+Center,2,4,Balqa,1
+North,1,5,Irbid,1
+North,1,6,Jarash,1
+South,2,7,Karak,1
+South,3,8,Maan,1
+Center,2,9,Madaba,1
+North,1,10,Mafraq,1
+South,3,11,Tafileh,1
+Center,2,12,Zarqa,1
+
