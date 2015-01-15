@@ -1,6 +1,6 @@
-mov <- read.csv("Movement_Test_Data_v.11Nov2014.csv")
+mov <- read.csv("originaldata.csv")
 
-show2 <- read.csv("~/unhcr_r_project/flow/show2.csv", dec=",")
+show2 <- read.csv("region.csv", dec=",")
 
 mov1 <- merge (x=mov, y=show2, by.x="gov_orig", by.y="name") 
 mov1 <- merge (x=mov1, y=show2, by.x="gov_dest", by.y="name") 
@@ -16,8 +16,10 @@ move <- mov1[, c(
   "regionid.x",  "regionid.y", "region.x",   "region.y",    "gov_orig_id",  "gov_dest",   "gov_id", "gov_orig", "flow"  
   )] 
 
-
+################
+#install.packages("plyr")
 library(plyr)
+
 move <- rename(move, c( "region.x"="originregion_name",  "regionid.x"="originregion_id",  "region.y"="destinationregion_name", 
                           "regionid.y"="destinationregion_id", "gov_dest"="destination_name",  "gov_orig"="origin_name",  "gov_orig_id"="origin_iso",
                           "gov_id"="destination_iso",  "flow"="countryflow_1990" ))
@@ -60,5 +62,5 @@ move3 <- move2[, c(
 move3$origin_iso <- toupper(substr(move3$origin_name, 1,3))
 move3$destination_iso <-  toupper(substr(move3$destination_name, 1,3))
 
-write.csv(move3, file="data.csv",row.names=F, na="")
+write.csv(move3, file="data1.csv",row.names=F, na="")
 

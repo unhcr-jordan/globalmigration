@@ -385,7 +385,7 @@ a.button:hover {
    SVG styles
    ---------------------------------------------------------*/
 svg {
-  font-size: 14px;
+  font-size: 16px;
   max-width: 100%;
   vector-effect: non-scaling-stroke;
 }
@@ -432,7 +432,7 @@ text.fade {
 }
 text.region {
   font-family: 'CartoGothic', Arial, sans-serif;
-  font-size: 14px;
+  font-size: 17px;
 }
 .chord {
   opacity: 0.75;
