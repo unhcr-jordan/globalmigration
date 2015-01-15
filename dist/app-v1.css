@@ -481,8 +481,9 @@ a:hover {
 
 .container {
   margin: 0 auto;
-  min-width: 580px;
-  max-width: 1200px;
+  padding: 20px;
+  min-width: 480px;
+  max-width: 650px;
   background-color: #FFFEFF;
   -moz-box-shadow: 0 0 15px #000;
   -webkit-box-shadow: 0 0 15px #000;
@@ -502,34 +503,34 @@ header, footer {
   margin: 0;
 }
 header {
-  padding: 60px 30px 0 30px;
+  padding: 0px 0px 0px 0px;
 }
 footer {
-  padding: 0 30px 0 30px;
+  padding: 0 20px 0 20px;
 }
 
 h1 {
   font-family: 'CartoGothic', Arial, sans-serif;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 2.3ex;
+  font-size: 22px;
+  line-height: 1.5ex;
   text-transform: uppercase;
-  margin: 0 0 35px 0;
+  margin: 0 0 5px 0;
 }
 
 .badge {
   float: right;
-  margin: -14px 20px 20px 20px;
+  margin: -14px 10px 10px 10px;
 }
 
 .lead-in {
-  font-size: 22px;
-  line-height: 1.3em;
+  font-size: 12px;
+  line-height: 1.1em;
   font-weight: normal;
   color: #6D6B6B;
-  width: 75%;
-  margin: 0 0 30px 0;
-  max-width: 32em;
+  width: 95%;
+  margin: 0 0 5px 0;
+ /* max-width: 32em; */
 }
 
 .credits {
@@ -787,7 +788,7 @@ a.button:hover {
    SVG styles
    ---------------------------------------------------------*/
 svg {
-  font-size: 12px;
+  font-size: 14px;
   max-width: 100%;
   vector-effect: non-scaling-stroke;
 }

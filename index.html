@@ -24,14 +24,10 @@
     </div>
 
     <header role="banner">
-        <h1>Visualisation of refugees internal displacement flows in Jordan</h1>
+        <h1>Visualization of the Movement of SYR Refugees within Jordan</h1>
       <div class="lead-in">
-        Explore how refugees are moving within Jordan.
+        Explore how refugees are moving within Jordan. The plot shows movements, i.e. relocation of the entire family, from one area to another. It does not capture any movement within a Governorate, but only describes how many families have fully relocated across Governorates as described in the UNHCR Jordan Home Visit Report (2014).
       </div>
-      <div class="credits">
-        by <a href="http://www.unhcr.jo">UNHCR Jordan</a>
-      </div>
-      <hr>
     </header>
 
     <div class="wrap">
@@ -47,31 +43,22 @@
 
 
     <footer role="contentinfo">
-
       <hr>
-
       <div class="column-wrap-3">
-
-
         <div class="clear"></div>
-
       </div>
-
       <hr>
-
       <div class="license">
         Credits to  <a href="http://www.global-migration.info/">http://www.global-migration.info/</a>.
         This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License.</a>
         <a href="http://creativecommons.org/licenses/by-nc/3.0/"><img src="images/by-nc.png"></a>
       </div>
-
- 
       <div class="column-wrap-2">
         <div class="column">
           <div class="column-item">
             <h2>About the Data</h2>
             <p>
-              The data were gathered during the home visits that UNHCR conducts together with IRD.
+              The data were gathered during the home visits that UNHCR conducts together with IRD. Please visit also the <a target="_blank" href="http://www.unhcr.jo/Living-in-the-shadows/">iving in the shadows</a> report. 
             </p>
             <div class="center">
               <a href="data/data.csv" class="button">
@@ -94,19 +81,11 @@
             </div>
           </div>
         </div>
-
         <div class="clear"></div>
-
         <hr>
-
-
         <div class="clear"></div>
-
       </div>
-
       <br><br>
-
-
     </footer>
 
     <div id=help-wrapper class=help-wrapper>
@@ -115,11 +94,12 @@
         <div class="help-content">
           <h3>How to read the plot</h3>
           <img src="images/help.png" class="left">
-          <p>
-            Origins and destinations are represented by the circle’s segments.
+          <p>The plot is divided into three parts representing the three regions of Jordan (North, Central and South). By clicking the region, you can see a breakdown by Governorate. <br >
+        By hovering on any of the arrows, you can see how many families out of a total of XYZ moved. The pop-up box also gives you the direction of movement. In each Governorate, the largest portion “moves” to the same Governorate, which means that the families did not relocate.  <br >
+          <!-- -->  Origins and destinations are represented by the circle’s segments.
             Each governorate is assigned a colour.
-            Flows have the same colour as their origin and the width indicates their size.
-            The direction of the flow is also shown by the gap between flow and governorate: small gap indicates origin; large gap indicates destination.
+            Flows have the same colour as their origin and the width indicates their size.  <br >
+            The direction of the flow is also shown by the gap between flow and governorate: small gap indicates origin; large gap indicates destination.  <br >
             <b>Click on a segment to switch between country and region view.</b>
           </p>
           <div class="clear"></div>
@@ -171,7 +151,8 @@
           element: '#diagram',
           now: now,
           animationDuration: 500,
-          margin: 125,
+          margin: 95,
+        //  margin: 125,
           arcPadding: 0.04,
           layout: {
             threshold: 10,
